@@ -29,4 +29,8 @@ private fun variablesConstants(){
     //Crearem una variable
     var nomAlumne = "Joan Perez"
     println(nomAlumne)
+
+    //Sobreescribim el valor
+    nomAlumne = "Patricia Sanchez"
+    println(nomAlumne)
 }
