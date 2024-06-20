@@ -16,32 +16,17 @@ import es.cibernarium.lamevaapp.ui.theme.LaMevaAppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            LaMevaAppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
+        setContentView(R.layout.activity_main)
+        //Invocarem una funció personalitzada
+        variablesConstants()
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    LaMevaAppTheme {
-        Greeting("Android")
-    }
+/*
+Aqui fem una funció per parlar de variables
+ */
+private fun variablesConstants(){
+    //Crearem una variable
+    var nomAlumne = "Joan Perez"
+    println(nomAlumne)
 }
