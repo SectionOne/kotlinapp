@@ -29,7 +29,17 @@ private fun estructuraMaps() {
 
     //Afegim valors
     //El fer un mapOf estem borrant l'estructura anterior i estem sobreescribint
-    elMeuMapa = mapOf("Oriol" to 8,"Sara" to 5,"Ricard" to 3)
+    //elMeuMapa = mapOf("Oriol" to 8,"Sara" to 5,"Ricard" to 3)
+    //Si desitgem afegir sense borrar l'anterior
+    //elMeuMapa["Rosa"] = 6 //Ara donarà error ja que el map creat no es mutable o redimensionable
+
+    elMeuMapa = mutableMapOf("Oriol" to 8,"Sara" to 5,"Ricard" to 3) //Aixi és farem mutable
+    println(elMeuMapa)
+
+    //Si desitgem afegir sense borrar l'anterior
+    elMeuMapa["Rosa"] = 6 //Ara no donarà error ja que el map creat es mutable o redimensionable
+    //S'ha d'emprar
+    elMeuMapa.put("Cristina",3)
     println(elMeuMapa)
 
 }
