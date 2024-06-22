@@ -36,4 +36,9 @@ private fun bucles() {
     for(evaluacio:MutableMap.MutableEntry<String,Int> in evaluacions){
         println("L'alumne ${evaluacio.key} ha obtingut un ${evaluacio.value}")
     }
+
+    //Exemple de rang amb la taula del 7
+    for (taula:Int in 0..10){
+        println("7 x " + taula + " = " + (taula * 7))
+    }
 }
