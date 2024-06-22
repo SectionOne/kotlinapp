@@ -45,4 +45,8 @@ private fun estructuraMaps() {
     //Accés a una dada
     println(elMeuMapa["Rosa"])
 
+    //Borrem un element
+    elMeuMapa.remove("Rosa")
+    println(elMeuMapa)
+
 }
