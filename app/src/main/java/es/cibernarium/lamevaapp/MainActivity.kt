@@ -18,23 +18,24 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        sentenciaWhen()
+        estructuraArrays()
     }
 }
 
-//Aqui expliquem el when
-private fun sentenciaWhen() {
-    var nota = 6
+//Aqui expliquem els arrays
+private fun estructuraArrays() {
+    var alumne1 = "Oriol"
+    val alumne2 = "Joana"
+    val alumne3 = "Iria"
+    val alumne4 = "Ramon"
 
-    when(nota){
-        0, 1, 2,3, 4 -> {
-            println("Suspes")
-        } in 5..7 -> { //Definim un rang entre 5 i 7
-            println("Aprobat")
-        } in 8..10 -> {
-            println("Notable")
-        } else -> {
-            println("No reconeixem la nota")
-        }
-    }
+    //Crearem el Array i tenim que designar de quin tipus de dada contindrà
+    // i no podrán combinarse
+    val aula: ArrayList<String> = arrayListOf<String>()
+    //Afegir dades una a una
+    aula.add(alumne1)
+    aula.add(alumne2)
+    aula.add(alumne3)
+    aula.add(alumne4)
+    println(aula)
 }
