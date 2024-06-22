@@ -34,6 +34,11 @@ private fun tipusDeDades(){
     val num2 = 3
     val num3 = num1 + num2
     println(num3)
-    //Float
+    //Decimals (Float 32bits i Double 64 bits)
+    val temperatura: Float = 23.5f
+    val numDoble: Double = 2.9
+    val num4 = 2 //Es Int pero el ser Double el resultat, num4 s'adaptarà el tipus a Double
+    val resultat: Double = temperatura + numDoble + num4
+    println(resultat)
     //Boolean
 }
