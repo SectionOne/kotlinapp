@@ -41,4 +41,11 @@ private fun estructuraArrays() {
 
     aula.addAll(listOf("Joan","Eva"))
     println(aula)
+
+    //Accedir a dades
+    println(aula[2])
+
+    aula[2] = "Francesc"
+
+    println(aula[2])
 }
