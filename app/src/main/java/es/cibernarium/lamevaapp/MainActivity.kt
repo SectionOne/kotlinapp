@@ -33,4 +33,6 @@ private fun variablesConstants(){
     //Sobreescribim el valor
     nomAlumne = "Patricia Sanchez"
     println(nomAlumne)
+
+    edat = 23 //No és poden fer servir variables que n'ho s'han declarat
 }
