@@ -18,26 +18,23 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        condicionals()
+        sentenciaWhen()
     }
 }
 
-//Aqui expliquem els tipus de dades
-private fun condicionals() {
-    var edat = 23
-    var llistaVip = false
-    //OPeradors condicionals
-    //> major que
-    //< menor que
-    //>= major o igual que
-    //<= menor o igual que
-    //== igual
-    //!= diferent
-    if (edat >= 18 && llistaVip == true) {
-        println("$edat es major de 18") //El dolar ens permet intercalar variables amb string
-    } else if(llistaVip == false) {
-        println("Tens que estar incrit a la llista VIP")
-    } else {
-        println("$edat es menor de 18")
+//Aqui expliquem el when
+private fun sentenciaWhen() {
+    var pais = "España"
+
+    when(pais){
+        "Italia" -> {
+            println("El idioma és Italia")
+        } "España" -> {
+            println("El idioma és Espanyol")
+        } "Vietnam" -> {
+            println("El idioma és Vietnamita")
+        } else -> {
+            println("No reconeixem el pais")
+        }
     }
 }
