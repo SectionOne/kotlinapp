@@ -18,38 +18,18 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        variablesConstants()
+        tipusDeDades()
     }
 }
 
-/*
-Aqui fem una funció per parlar de variables
- */
-private fun variablesConstants(){
-    //Crearem una variable
-    var nomAlumne = "Joan Perez"
-    println(nomAlumne)
-
-    //Sobreescribim el valor
-    nomAlumne = "Patricia Sanchez"
-    println(nomAlumne)
-
-    //edat = 23 /No podem anomenar una variable sense declararla
-    //nomAlumne = 23 //No és poden fer tipus diferents els declarats
-
-    var academia = "La meva academia"
-    println(academia)
-
-    nomAlumne = academia
-
-    println(nomAlumne)
-
-    //Constants
-    /* Les constants no permeten la modificació del seu valor un cop declarada */
-
-    val diesSetmana = 7
-
-    println(diesSetmana)
-
-    //diesSetmana = 10 No és podrà modificar un cop declarat
+//Aqui expliquem els tipus de dades
+private fun tipusDeDades(){
+    //Strings
+    val ciutat = "Vilanova i la Geltru"
+    val provincia: String = "barcelona"
+    val direccio = ciutat + provincia
+    println(direccio)
+    //Integers
+    //Float
+    //Boolean
 }
