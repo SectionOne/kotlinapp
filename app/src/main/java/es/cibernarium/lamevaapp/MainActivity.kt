@@ -32,4 +32,8 @@ private fun bucles() {
     for (alumne:String in alumnes){
         println(alumne)
     }
+
+    for(evaluacio:MutableMap.MutableEntry<String,Int> in evaluacions){
+        println("L'alumne ${evaluacio.key} ha obtingut un ${evaluacio.value}")
+    }
 }
