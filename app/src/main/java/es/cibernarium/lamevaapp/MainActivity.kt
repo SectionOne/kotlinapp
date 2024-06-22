@@ -52,4 +52,10 @@ private fun estructuraArrays() {
     //Eliminar dada
     aula.removeAt(3)
     println(aula)
+
+    //Recorrem un array
+    aula.forEach{
+        //Obtenim el valor de cada element del array. It es refereix el item
+        println(it)
+    }
 }
