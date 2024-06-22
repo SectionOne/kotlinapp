@@ -27,4 +27,9 @@ private fun estructuraMaps() {
     var elMeuMapa: Map<String,Int> = mapOf()
     println(elMeuMapa)
 
+    //Afegim valors
+    //El fer un mapOf estem borrant l'estructura anterior i estem sobreescribint
+    elMeuMapa = mapOf("Oriol" to 8,"Sara" to 5,"Ricard" to 3)
+    println(elMeuMapa)
+
 }
