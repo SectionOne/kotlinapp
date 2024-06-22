@@ -18,32 +18,22 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        tipusDeDades()
+        condicionals()
     }
 }
 
 //Aqui expliquem els tipus de dades
-private fun tipusDeDades(){
-    //Strings
-    val ciutat = "Vilanova i la Geltru"
-    val provincia: String = "barcelona"
-    val direccio = ciutat + provincia
-    println(direccio)
-    //Integers (Byte,Short,Int,Long)
-    val num1: Int = 2
-    val num2 = 3
-    val num3 = num1 + num2
-    println(num3)
-    //Decimals (Float 32bits i Double 64 bits)
-    val temperatura: Float = 23.5f
-    val numDoble: Double = 2.9
-    val num4 = 2 //Es Int pero el ser Double el resultat, num4 s'adaptarà el tipus a Double
-    val resultat: Double = temperatura + numDoble + num4
-    println(resultat)
-    //Boolean
-    val comprat: Boolean = true
-    val pagat = false
-    //val tenda = comprat + pagat Els boolean no permeten operar matematicament
-    println(comprat == pagat) //Es poden comparar dues dades boolean
-    println(comprat && pagat) //Es poden evaluar si ambes es compleixen
+private fun condicionals() {
+    var edat = 21
+
+    //OPeradors condicionals
+    //> major que
+    //< menor que
+    //>= major o igual que
+    //<= menor o igual que
+    //== igual
+    //!= diferent
+    if (edat >= 18) {
+        println("$edat es major de 18") //El dolar ens permet intercalar variables amb string
+    }
 }
