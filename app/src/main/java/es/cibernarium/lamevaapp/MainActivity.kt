@@ -42,4 +42,7 @@ private fun estructuraMaps() {
     elMeuMapa.put("Cristina",7)
     println(elMeuMapa)
 
+    //Accés a una dada
+    println(elMeuMapa["Rosa"])
+
 }
