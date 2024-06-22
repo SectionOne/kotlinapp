@@ -24,17 +24,17 @@ class MainActivity : ComponentActivity() {
 
 //Aqui expliquem el when
 private fun sentenciaWhen() {
-    var pais = "España"
+    var nota = 6
 
-    when(pais){
-        "Italia" -> {
-            println("El idioma és Italia")
-        } "España","Mexico","Honduras" -> {
-            println("El idioma és Espanyol")
-        } "Vietnam" -> {
-            println("El idioma és Vietnamita")
+    when(nota){
+        0, 1, 2,3, 4 -> {
+            println("Suspes")
+        } in 5..7 -> { //Definim un rang entre 5 i 7
+            println("Aprobat")
+        } in 8..10 -> {
+            println("Notable")
         } else -> {
-            println("No reconeixem el pais")
+            println("No reconeixem la nota")
         }
     }
 }
