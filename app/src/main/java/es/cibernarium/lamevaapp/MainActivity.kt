@@ -51,5 +51,5 @@ private fun variablesConstants(){
 
     println(diesSetmana)
 
-    //diesSetmana = 10 No és podrà modificar
+    //diesSetmana = 10 No és podrà modificar un cop declarat
 }
