@@ -29,7 +29,7 @@ private fun sentenciaWhen() {
     when(pais){
         "Italia" -> {
             println("El idioma és Italia")
-        } "España" -> {
+        } "España","Mexico","Honduras" -> {
             println("El idioma és Espanyol")
         } "Vietnam" -> {
             println("El idioma és Vietnamita")
