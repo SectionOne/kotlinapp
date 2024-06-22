@@ -41,4 +41,9 @@ private fun tipusDeDades(){
     val resultat: Double = temperatura + numDoble + num4
     println(resultat)
     //Boolean
+    val comprat: Boolean = true
+    val pagat = false
+    //val tenda = comprat + pagat Els boolean no permeten operar matematicament
+    println(comprat == pagat) //Es poden comparar dues dades boolean
+    println(comprat && pagat) //Es poden evaluar si ambes es compleixen
 }
