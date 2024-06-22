@@ -48,4 +48,8 @@ private fun estructuraArrays() {
     aula[2] = "Francesc"
 
     println(aula[2])
+
+    //Eliminar dada
+    aula.removeAt(3)
+    println(aula)
 }
