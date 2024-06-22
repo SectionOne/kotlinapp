@@ -46,4 +46,9 @@ private fun bucles() {
     for (taula:Int in 0 until 10){
         println("7 x " + taula + " = " + (taula * 7))
     }
+
+    //Exemple de rang amb salts de 2 per mostrar els valors parells
+    for (nombre:Int in 0..10 step 2){
+        println(nombre)
+    }
 }
