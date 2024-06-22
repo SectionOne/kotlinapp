@@ -24,8 +24,8 @@ class MainActivity : ComponentActivity() {
 
 //Aqui expliquem els tipus de dades
 private fun condicionals() {
-    var edat = 21
-
+    var edat = 13
+    var llistaVip = false
     //OPeradors condicionals
     //> major que
     //< menor que
@@ -33,7 +33,7 @@ private fun condicionals() {
     //<= menor o igual que
     //== igual
     //!= diferent
-    if (edat >= 18) {
+    if (edat >= 18 && llistaVip == true) {
         println("$edat es major de 18") //El dolar ens permet intercalar variables amb string
     } else {
         println("$edat es menor de 18")
