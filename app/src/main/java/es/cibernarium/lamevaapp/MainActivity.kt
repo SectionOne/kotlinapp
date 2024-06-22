@@ -18,55 +18,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        estructuraArrays()
+        estructuraMaps()
     }
 }
 
-//Aqui expliquem els arrays
-private fun estructuraArrays() {
-    var alumne1 = "Oriol"
-    val alumne2 = "Joana"
-    val alumne3 = "Iria"
-    val alumne4 = "Ramon"
+//Aqui expliquem els mapes o diccionaris
+private fun estructuraMaps() {
+    var elMeuMapa: Map<String,Int> = mapOf()
+    println(elMeuMapa)
 
-    //Crearem el Array i tenim que designar de quin tipus de dada contindrà
-    // i no podrán combinarse
-    val aula: ArrayList<String> = arrayListOf<String>()
-    //Afegir dades una a una
-    aula.add(alumne1)
-    aula.add(alumne2)
-    aula.add(alumne3)
-    aula.add(alumne4)
-    println(aula)
-
-    aula.addAll(listOf("Joan","Eva"))
-    println(aula)
-
-    //Accedir a dades
-    println(aula[2])
-
-    aula[2] = "Francesc"
-
-    println(aula[2])
-
-    //Eliminar dada
-    aula.removeAt(3)
-    println(aula)
-
-    //Recorrem un array
-    aula.forEach{
-        //Obtenim el valor de cada element del array. It es refereix el item
-        println(it)
-    }
-
-    //Altres operacions
-    println(aula.count()) //Calculem el numero de elements
-
-    println(aula.first()) //Obtenim el primer element
-    println(aula.last()) //Obtenim l'ultim element
-
-    aula.sort() //Ordenar els elements incremental o alfabeticament
-    println(aula)
-
-    aula.clear() //Borrem tots els elements
 }
