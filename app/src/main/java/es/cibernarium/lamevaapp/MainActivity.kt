@@ -41,4 +41,9 @@ private fun bucles() {
     for (taula:Int in 0..10){
         println("7 x " + taula + " = " + (taula * 7))
     }
+
+    //Exemple de rang amb la taula del 3 sense tenir en compte l'últim valor
+    for (taula:Int in 0 until 10){
+        println("7 x " + taula + " = " + (taula * 7))
+    }
 }
