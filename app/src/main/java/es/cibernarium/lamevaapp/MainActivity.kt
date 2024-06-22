@@ -18,35 +18,18 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        estructuraMaps()
+        bucles()
     }
 }
 
 //Aqui expliquem els mapes o diccionaris
-private fun estructuraMaps() {
-    var elMeuMapa: Map<String,Int> = mapOf()
-    println(elMeuMapa)
+private fun bucles() {
+    //Bucles
+    val alumnes : List<String> = listOf("Josep","Maria","Jan","Anna")
+    val evaluacions : MutableMap<String,Int> = mutableMapOf("Josep" to 8, "Maria" to 4, "Jan" to 6, "Anna" to 9)
 
-    //Afegim valors
-    //El fer un mapOf estem borrant l'estructura anterior i estem sobreescribint
-    //elMeuMapa = mapOf("Oriol" to 8,"Sara" to 5,"Ricard" to 3)
-    elMeuMapa = mutableMapOf("Oriol" to 8,"Sara" to 5,"Ricard" to 3) //Aixi és farem mutable
-    println(elMeuMapa)
-
-    //Si desitgem afegir sense borrar l'anterior
-    elMeuMapa["Rosa"] = 6 //Donarà error ja que el map creat no es mutable o redimensionable
-    //També es pot emprar
-    elMeuMapa.put("Cristina",3)
-    println(elMeuMapa)
-
-    elMeuMapa.put("Cristina",7)
-    println(elMeuMapa)
-
-    //Accés a una dada
-    println(elMeuMapa["Rosa"])
-
-    //Borrem un element
-    elMeuMapa.remove("Rosa")
-    println(elMeuMapa)
-
+    //For
+    for (alumne:String in alumnes){
+        println(alumne)
+    }
 }
