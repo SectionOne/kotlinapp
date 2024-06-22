@@ -29,7 +29,11 @@ private fun tipusDeDades(){
     val provincia: String = "barcelona"
     val direccio = ciutat + provincia
     println(direccio)
-    //Integers
+    //Integers (Byte,Short,Int,Long)
+    val num1: Int = 2
+    val num2 = 3
+    val num3 = num1 + num2
+    println(num3)
     //Float
     //Boolean
 }
