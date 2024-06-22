@@ -53,7 +53,7 @@ private fun bucles() {
     }
 
     //Exemple de rang amb ordre invers
-    for (nombre:Int in 10 downTo 0){
+    for (nombre:Int in 10 downTo 0 step 4){
         println(nombre)
     }
 
