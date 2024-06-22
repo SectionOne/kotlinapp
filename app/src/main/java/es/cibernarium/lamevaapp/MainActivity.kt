@@ -58,4 +58,15 @@ private fun estructuraArrays() {
         //Obtenim el valor de cada element del array. It es refereix el item
         println(it)
     }
+
+    //Altres operacions
+    println(aula.count()) //Calculem el numero de elements
+
+    println(aula.first()) //Obtenim el primer element
+    println(aula.last()) //Obtenim l'ultim element
+
+    aula.sort() //Ordenar els elements incremental o alfabeticament
+    println(aula)
+
+    aula.clear() //Borrem tots els elements
 }
