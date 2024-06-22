@@ -34,5 +34,13 @@ private fun variablesConstants(){
     nomAlumne = "Patricia Sanchez"
     println(nomAlumne)
 
-    nomAlumne = 23 //No és poden fer tipus diferents els declarats
+    //edat = 23 /No podem anomenar una variable sense declararla
+    //nomAlumne = 23 //No és poden fer tipus diferents els declarats
+
+    var academia = "La meva academia"
+    println(academia)
+
+    nomAlumne = academia
+
+    println(nomAlumne)
 }
