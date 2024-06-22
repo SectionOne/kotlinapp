@@ -35,5 +35,7 @@ private fun condicionals() {
     //!= diferent
     if (edat >= 18) {
         println("$edat es major de 18") //El dolar ens permet intercalar variables amb string
+    } else {
+        println("$edat es menor de 18")
     }
 }
