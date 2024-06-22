@@ -57,4 +57,9 @@ private fun bucles() {
         println(nombre)
     }
 
+    //Podem crear automàticament un array de rang numèric
+    var notes:IntRange = (0..10)
+    for(nota:Int in notes){
+        println(nota)
+    }
 }
