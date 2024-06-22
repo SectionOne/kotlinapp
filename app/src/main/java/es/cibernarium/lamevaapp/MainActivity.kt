@@ -38,4 +38,7 @@ private fun estructuraArrays() {
     aula.add(alumne3)
     aula.add(alumne4)
     println(aula)
+
+    aula.addAll(listOf("Joan","Eva"))
+    println(aula)
 }
