@@ -62,4 +62,17 @@ private fun bucles() {
     for(nota:Int in notes){
         println(nota)
     }
+
+    //while
+    var pisDesitjat = 6
+    var pisAscensor = 0
+
+    while(pisAscensor <= pisDesitjat){
+        if(pisAscensor < pisDesitjat){
+            println("Estem el pis " + pisAscensor)
+        } else {
+            println("Ja hem arrivat el pis " + pisAscensor)
+        }
+        pisAscensor++
+    }
 }
