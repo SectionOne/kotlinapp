@@ -43,4 +43,13 @@ private fun variablesConstants(){
     nomAlumne = academia
 
     println(nomAlumne)
+
+    //Constants
+    /* Les constants no permeten la modificació del seu valor un cop declarada */
+
+    val diesSetmana = 7
+
+    println(diesSetmana)
+
+    diesSetmana = 10
 }
