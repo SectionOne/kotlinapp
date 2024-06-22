@@ -33,8 +33,10 @@ private fun condicionals() {
     //<= menor o igual que
     //== igual
     //!= diferent
-    if (edat >= 18 || llistaVip == true) {
+    if (edat >= 18 && llistaVip == true) {
         println("$edat es major de 18") //El dolar ens permet intercalar variables amb string
+    } else if(llistaVip == false) {
+        println("Tens que estar incrit a la llista VIP")
     } else {
         println("$edat es menor de 18")
     }
