@@ -1,4 +1,4 @@
 package es.cibernarium.lamevaapp
 
-class Usuari(usuari:String,clau:String,rol:Int) {
+class Usuari(val usuari:String,val clau:String,var rol:Int) {
 }
