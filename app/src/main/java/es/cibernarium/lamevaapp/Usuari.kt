@@ -1,6 +1,6 @@
 package es.cibernarium.lamevaapp
 
-class Usuari(val usuari:String,val clau:String,var rol:Rol) {
+class Usuari(val usuari:String,val clau:String,var rol:Rol, val equip: Array<Usuari>? = null) {
 
     //Mètode enumerat
     enum class Rol {
