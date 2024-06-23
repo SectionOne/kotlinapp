@@ -18,13 +18,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        saludar()
-        saludar()
-        saludar()
+        saludar("Marta")
+        saludar("Robert")
+        saludar("Sara")
     }
 }
 
 //Aqui expliquem com definir una funció
-private fun saludar() {
-    println("Hola sóc una funció")
+private fun saludar(nom:String) {
+    println("Hola el meu nom és $nom")
 }
