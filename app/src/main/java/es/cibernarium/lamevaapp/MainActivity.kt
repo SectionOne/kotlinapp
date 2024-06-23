@@ -24,10 +24,10 @@ class MainActivity : ComponentActivity() {
 
 //Aqui expliquem com definir una funció
 private fun crearUsuari() {
-    val nouUsuari = Usuari("admin", "1234", 1)
-    val nouUsuari1 = Usuari("Rosa", "1234", 1)
+    val nouUsuari = Usuari("admin", "1234", Usuari.Rol.ADMINISTRADOR)
+    val nouUsuari1 = Usuari("Rosa", "1234", Usuari.Rol.ACTIU)
     println(nouUsuari.usuari)
-    nouUsuari.rol = 2;
+    nouUsuari.rol = Usuari.Rol.BLOQUEJAT;
     println(nouUsuari.rol)
     //nouUsuari.clau = "4321" Aquest parametre no es podria modificar al ser let
     nouUsuari.presentarse()
