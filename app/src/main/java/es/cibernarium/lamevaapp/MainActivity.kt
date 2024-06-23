@@ -18,14 +18,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        println(saludar("Ordinador",230,21))
-        println(saludar("Tablet",106,21))
-        println(saludar("Smartphone",983,21))
+        crearUsuari()
     }
 }
 
 //Aqui expliquem com definir una funció
-private fun saludar(nom:String,pvp:Int,iva:Int) : String {
-    val total = (((pvp * iva) / 100) + pvp)
-    return "Article $nom amb el preu $total"
+private fun crearUsuari() {
+    val nomUsuari = Usuari("admin","1234",1)
 }
