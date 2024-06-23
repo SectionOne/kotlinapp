@@ -18,61 +18,18 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        bucles()
+        emprantNulls()
     }
 }
 
 //Aqui expliquem els mapes o diccionaris
-private fun bucles() {
-    //Bucles
-    val alumnes : List<String> = listOf("Josep","Maria","Jan","Anna")
-    val evaluacions : MutableMap<String,Int> = mutableMapOf("Josep" to 8, "Maria" to 4, "Jan" to 6, "Anna" to 9)
+private fun emprantNulls() {
+    //Si a una variable preexistent desitgem assignarli un null ens donarà un error de compilació
+    var ciutat = "Barcelona"
+    //ciutat = null Aixó originarà un error
+    println(ciutat)
 
-    //For
-    for (alumne:String in alumnes){
-        println(alumne)
-    }
-
-    for(evaluacio:MutableMap.MutableEntry<String,Int> in evaluacions){
-        println("L'alumne ${evaluacio.key} ha obtingut un ${evaluacio.value}")
-    }
-
-    //Exemple de rang amb la taula del 7
-    for (taula:Int in 0..10){
-        println("7 x " + taula + " = " + (taula * 7))
-    }
-
-    //Exemple de rang amb la taula del 3 sense tenir en compte l'últim valor
-    for (taula:Int in 0 until 10){
-        println("7 x " + taula + " = " + (taula * 7))
-    }
-
-    //Exemple de rang amb salts de 2 per mostrar els valors parells
-    for (nombre:Int in 0..10 step 2){
-        println(nombre)
-    }
-
-    //Exemple de rang amb ordre invers
-    for (nombre:Int in 10 downTo 0 step 4){
-        println(nombre)
-    }
-
-    //Podem crear automàticament un array de rang numèric
-    var notes:IntRange = (0..10)
-    for(nota:Int in notes){
-        println(nota)
-    }
-
-    //while
-    var pisDesitjat = 6
-    var pisAscensor = 0
-
-    while(pisAscensor <= pisDesitjat){
-        if(pisAscensor < pisDesitjat){
-            println("Estem el pis " + pisAscensor)
-        } else {
-            println("Ja hem arrivat el pis " + pisAscensor)
-        }
-        pisAscensor++
-    }
+    var assignatura:String? = "Introducció a Kotlin"
+    assignatura = null
+    println("Estic cursant " + assignatura)
 }
