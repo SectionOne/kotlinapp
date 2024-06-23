@@ -23,6 +23,7 @@ class MainActivity : ComponentActivity() {
 }
 
 //Aqui expliquem els mapes o diccionaris
+@Suppress("UNREACHABLE_CODE")
 private fun emprantNulls() {
     //Si a una variable preexistent desitgem assignarli un null ens donarà un error de compilació
     var ciutat = "Barcelona"
@@ -31,5 +32,8 @@ private fun emprantNulls() {
 
     var assignatura:String? = "Introducció a Kotlin"
     assignatura = null
-    println("Estic cursant " + assignatura)
+    println(assignatura)
+
+    //Fem servir el ? per evitar que s'executi el length si es null
+    println(assignatura?.length)
 }
