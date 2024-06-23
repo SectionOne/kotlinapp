@@ -18,22 +18,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Invocarem una funció personalitzada
-        emprantNulls()
+        saludar()
+        saludar()
+        saludar()
     }
 }
 
-//Aqui expliquem els mapes o diccionaris
-@Suppress("UNREACHABLE_CODE")
-private fun emprantNulls() {
-    //Si a una variable preexistent desitgem assignarli un null ens donarà un error de compilació
-    var ciutat = "Barcelona"
-    //ciutat = null Aixó originarà un error
-    println(ciutat)
-
-    var assignatura:String? = "Introducció a Kotlin"
-    assignatura = null
-    println(assignatura)
-
-    //Fem servir el ? per evitar que s'executi el length si es null
-    println(assignatura?.length)
+//Aqui expliquem com definir una funció
+private fun saludar() {
+    println("Hola sóc una funció")
 }
